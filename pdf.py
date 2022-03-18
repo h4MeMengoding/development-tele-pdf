@@ -33,7 +33,7 @@ plugin = dict(
 
 # PYROGRAM BOT AUTHENTIFICATION
 bot = Client(
-    "InHamePDF",
+    "ILovePDF",
     plugins = plugin,
     api_id = Config.API_ID,
     parse_mode = "markdown",
