@@ -1,10 +1,5 @@
-'''
-
-█ █▄ █    █▄█ ▄▀▄ █▄ ▄█ ██▀    █▀▄ █▀▄ █▀ 
-█ █ ▀█    █ █ █▀█ █ ▀ █ █▄▄    █▀  █▄▀ █▀ 
-                        Dev : IlhamGUD
-
-'''
+# fileName : plugins/checkPdf.py
+# copyright ©️ 2021 nabilanavab
 
 import fitz
 import shutil
@@ -14,29 +9,24 @@ from plugins.toKnown import toKnown
 from plugins.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-
-
-
 #--------------->
 #--------> LOCAL VAR.
 #------------------->
 
 encryptedMsg = """`FILE IS ENCRYPTED` 🔐
 
-Nama FIle: `{}`
-Ukuran File: `{}`
+File Name: `{}`
+File Size: `{}`
 
-`Jumlah Halaman: {}`"""
+`Number of Pages: {}`✌️"""
 
+codecMsg = """__I don't do anything with this file__ 😏
 
-codecMsg = """__I don't do anything with this file__ 
-
-  `CODEC ERROR`  """
+🐉  `CODEC ERROR`  🐉"""
 
 #--------------->
 #--------> CHECKS PDF CODEC, IS ENCRYPTED OR NOT
 #------------------->
-
 
 async def checkPdf(file_path, callbackQuery):
     try:
@@ -87,7 +77,7 @@ async def checkPdf(file_path, callbackQuery):
                 [
                     [
                         InlineKeyboardButton(
-                            "❌ - ERROR IN CODEC",
+                            "❌ ERROR IN CODEC ❌",
                             callback_data="error"
                         )
                     ]
@@ -102,5 +92,4 @@ async def checkPdf(file_path, callbackQuery):
             pass
         return "notPdf"
 
-
-# Copyright InHame Dev
+#                                                                                  Telegram: @nabilanavab
