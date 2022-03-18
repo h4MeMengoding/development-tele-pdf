@@ -1,0 +1,53 @@
+{
+	"name": "inhameaboutpdf",
+	"description": "Bot telegram yang dapat digunakan untuk mengubah berbagai macam pdf",
+	"keywords": [
+		"Telegram", "Telegram Bot", "pdf bot",
+		"inhamebot", "ilhamshofa", "python",
+		"pdf_bot", "complete pdf bot"
+	],
+	"website": "https://github.com/InHameDev/tele-pdf-v2",
+	"repository": "https://github.com/InHameDev/tele-pdf-v2",
+	"logo": "https://i.imgur.com/hdsxahw.png",
+	"success_url": "https://github.com/InHameDev/tele-pdf-v2",
+	"stack": "heroku-20",
+	"env": {
+		"API_ID": {
+			"description": "API_ID didapat dari my.telegram.org",
+			"required": true
+		},
+		"API_HASH": {
+			"description": "API_ID didapat dari my.telegram.org",
+			"required": true
+		},
+		"API_TOKEN": {
+			"description": "API_TOKEN didapat dari @botfather",
+			"required": true
+		},
+		"UPDATE_CHANNEL": {
+			"description": "Ketika ingin menggunakan subscribe channel",
+			"required": false
+		},
+		"CONVERT_API": {
+			"description": "ConvertAPI secret token",
+			"required": false
+		},
+		"MAX_FILE_SIZE": {
+			"description": "batas maksimal file yg diterima (mb)",
+			"required": false
+		},
+		"OWNER_ID": {
+			"description": "jika tidak digunakan :/",
+			"required": false
+		},
+		"BANNED_USER": {
+			"description": "jika tidak digunakan :/",
+			"required": false
+		}
+	},
+	"buildpacks": [
+		{
+			"url": "heroku/python"
+		}
+	]
+}
